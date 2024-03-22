@@ -1,0 +1,187 @@
+
+**** 12/08/23 19:20:59 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stab"  [ c:\users\florin\desktop\p1_2023_431e_alistar_florin_sers_n2_orcad\schematics\schematic-PSpiceFiles\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "stab.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../additional libraries/smls14bet.lib" 
+.LIB "../../../additional libraries/mjd32cg.lib" 
+.LIB "../../../additional libraries/bzx84c2v7.lib" 
+.LIB "../../../additional libraries/bc856b.lib" 
+.LIB "../../../additional libraries/bc846b.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Florin\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 20 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SCHEMATIC
+Q_Q4         N101123 N101033 N100887 QBC856B 
+D_Led2         N101159 0 SMLS14BET 
+R_R9         0 N101673  51 TC=0,0 
+R_R7         N100899 N100499  1k TC=0,0 
+R_R12         0 N101667  150 TC=0,0 
+D_D2         0 N101123 BZX84-C2V7 
+Q_Q7         N100873 N100447 N100451 QBC846B 
+Q_Q5         N101129 N101033 N100893 QBC856B 
+R_RL         0 N100451  100 TC=0,0 
+X_P2         0 N101709 N101709 POT PARAMS: SET=0.5 VALUE=10k
+Q_Q10         N100873 N101481 0 QBC846B 
+Q_Q13         N100899 N101123 N1015551 QBC846B 
+R_R10         N101153 N100451  910 TC=0,0 
+R_Rsc1         N100451 N100837  4.7 TC=0,0 
+R_R4         N100887 N100499  68 TC=0,0 
+Q_Q11         0 N101117 N101033 QBC856B 
+Q_Q9         0 N101443 N101129 QBC856B 
+R_Rsc2         N100451 N100447  4.7 TC=0,0 
+R_R3         N100881 N100499  510 TC=0,0 
+Q_Q12         N100873 N101709 0 QBC846B 
+R_R11         N101667 N101443  4.7k TC=0,0 
+D_D1         N101249 N100499 BZX84-C2V7 
+R_R6         N100905 N100499  470 TC=0,0 
+R_R14         N101709 N101679  1k TC=0,0 
+Q_Q8         N101481 N101123 N101129 QBC856B 
+V_V1         N100499 0 8
+Q_Q1         N100447 N100765 N100561 QMJD32CT4G 
+R_Rsc4         N100837 N100447  1 TC=0,0 
+R_Rled2         N101159 N100451  100 TC=0,0 
+Q_Q2         N100765 N100873 N100447 QBC846B 
+Q_Q6         N100873 N101033 N100905 QBC856B 
+R_R0         0 N101249  680 TC=0,0 
+R_Rsc3         N100451 N100447  4.7 TC=0,0 
+R_R5         N100893 N100499  82 TC=0,0 
+R_R8         N101673 N101481  220 TC=0,0 
+R_R13         N101679 N1015551  15k TC=0,0 
+R_R1         N101249 N101117  1k TC=0,0 
+X_P1         N101443 N101443 N101153 POT PARAMS: SET=0.5 VALUE=5k
+Q_Q3         N101117 N101033 N100881 QBC856B 
+R_R2         N100561 N100499  1 TC=0,0 
+
+**** RESUMING stab.cir ****
+.END
+
+**** 12/08/23 19:20:59 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stab"  [ c:\users\florin\desktop\p1_2023_431e_alistar_florin_sers_n2_orcad\schematics\schematic-PSpiceFiles\
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               SMLS14BET       BZX84-C2V7      
+          IS  405.890000E-24  110.880000E-18 
+           N    2.4475           .92657      
+         ISR                    1.515900E-06 
+         IKF     .98529       147.68         
+          BV                    2.7639       
+         IBV                     .06977      
+          RS   15.483            .85899      
+          TT                   17.889000E-09 
+         CJO   38.500000E-12  344.690000E-12 
+          VJ     .87273          .72935      
+           M     .20189          .31964      
+          EG    2.638                        
+
+
+**** 12/08/23 19:20:59 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stab"  [ c:\users\florin\desktop\p1_2023_431e_alistar_florin_sers_n2_orcad\schematics\schematic-PSpiceFiles\
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QMJD32CT4G      QBC856B         QBC846B         
+               PNP             PNP             NPN             
+       LEVEL    1               1               1            
+          IS  363.152000E-15   20.140000E-15   18.220000E-15 
+          EG    1.15135                                      
+          BF  272.001         315.3           324.4          
+          NF     .981175         .9974           .9932       
+         VAF    8.02311        39.15           82            
+         IKF     .255979         .079            .109        
+         ISE    1.395810E-09    6.578000E-15  289.400000E-18 
+          NE    2.64418         1.45            1.4          
+          BR   26.8791          8.68            8.29         
+          NR     .990094         .9952           .9931       
+         VAR   38.8632          9.5            17.9          
+         IKR    2.55979          .09             .09         
+         ISC  254.712000E-15   16.330000E-15    9.982000E-12 
+          NC    1.09617         1.15            1.763        
+         ISS    0               0               0            
+          RB  210.108          10              10            
+         RBM   10.000000E-06    5.000000E-06    5            
+         IRB   13.167500E-06    5.000000E-06    5.000000E-06 
+          RE     .03296          .663            .649        
+          RC     .164799         .718            .7014       
+         CJE  201.825000E-12   11.350000E-12   12.440000E-12 
+         VJE     .360096         .7071           .7579       
+         MJE     .350357         .3808           .3656       
+         CJC  118.774000E-12    6.395000E-12    3.347000E-12 
+         VJC     .694849         .4951           .5463       
+         MJC     .382715         .44             .391        
+        XCJC     .778775         .6288           .6193       
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+         MJS     .5              .333            .333        
+          FC     .9              .9059           .979        
+          TF    3.622020E-09  654.600000E-12  490.800000E-12 
+         XTF  276.075           5.387           9.51         
+         VTF     .608188        6.245           2.927        
+         ITF    7.779510E-03     .2108           .3131       
+          TR    2.029570E-06   55.000000E-09   90.000000E-09 
+         XTB     .709265                                     
+         XTI    4.43052                                      
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.2             2.2             2.42         
+           D     .52             .52             .87         
+
+
+
+          JOB CONCLUDED
+
+**** 12/08/23 19:20:59 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-stab"  [ c:\users\florin\desktop\p1_2023_431e_alistar_florin_sers_n2_orcad\schematics\schematic-PSpiceFiles\
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

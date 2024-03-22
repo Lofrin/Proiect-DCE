@@ -1,0 +1,75 @@
+(ExpressProject "SCHEMATIC"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\schematic.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\schematic-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schematic-pspicefiles\schematic1\bias.sim"
+        (DisplayName "SCHEMATIC1-bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schematic-pspicefiles\schematic1\stab.sim"
+        (DisplayName "SCHEMATIC1-stab")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\schematic-pspicefiles\schematic1\temp.sim"
+        (DisplayName "SCHEMATIC1-temp")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\schematic-pspicefiles\schematic1\bias.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\additional libraries\smls14bet.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\additional libraries\smls14bet.lib"))
+      (File ".\additional libraries\mjd32cg.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\additional libraries\mjd32cg.lib"))
+      (File ".\additional libraries\bzx84c2v7.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\additional libraries\bzx84c2v7.lib"))
+      (File ".\additional libraries\bc856b.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\additional libraries\bc856b.lib"))
+      (File ".\additional libraries\bc846b.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\additional libraries\bc846b.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector)
+  (MPSSessionName "Florin")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 420"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 52 1688 52 511")
+        (Scroll "-421 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\FLORIN\DESKTOP\P1_2023_431E_ALISTAR_FLORIN_SERS_N2_ORCAD\SCHEMATICS\SCHEMATIC.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

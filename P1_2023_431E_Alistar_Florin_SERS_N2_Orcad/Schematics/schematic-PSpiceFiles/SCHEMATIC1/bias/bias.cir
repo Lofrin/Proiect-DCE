@@ -1,0 +1,23 @@
+** Profile: "SCHEMATIC1-bias"  [ c:\users\florin\desktop\p1_2023_431e_alistar_florin_sers_n2_orcad\schematics\schematic-pspicefiles\schematic1\bias.sim ] 
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../additional libraries/smls14bet.lib" 
+.LIB "../../../additional libraries/mjd32cg.lib" 
+.LIB "../../../additional libraries/bzx84c2v7.lib" 
+.LIB "../../../additional libraries/bc856b.lib" 
+.LIB "../../../additional libraries/bc846b.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Florin\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
